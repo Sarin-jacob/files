@@ -1,0 +1,4 @@
+@import url('https://prayag17.github.io/JellySkin/nightSkyGradient.css');
+@import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/Logo.css");
+@import url('https://prayag17.github.io/JellySkin/default.css');
+@import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/Logo.css");

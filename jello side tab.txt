@@ -1,0 +1,20 @@
+=============================For adding tabs to side bar==================================
+
+working thingy::
+
+go to jellyfin-web then open main.$%%$$%^%%@.bundle.js
+find :
+
+n += '<a is="emby-linkbutton" class="navMenuOption lnkMediaFolder" href="#!/home.html"><span class="material-icons navMenuOptionIcon home"></span><span class="navMenuOptionText">' + m.ZP.translate("Home") + "</span></a>",
+
+add the following to its end:
+
+n +='<a is="emby-linkbutton" class="navMenuOption lnkMediaFolder" href="http://192.168.1.33:5000/" target="_blank"><i class="md-icon navMenuOptionIcon"><img src="https://raw.githubusercontent.com/Sarin-jacob/files/main/slogo.png"></i><span class="navMenuOptionText">'+m.ZP.translate("Requests & Issues")+"</span></a>",
+
+or
+
+save 30px - 30px slogo.png to jellyfin-web/
+
+then
+
+n +='<a is="emby-linkbutton" class="navMenuOption lnkMediaFolder" href="http://192.168.1.33:5000/" target="_blank"><i class="md-icon navMenuOptionIcon"><img src="/web/slogo.png"></i><span class="navMenuOptionText">'+m.ZP.translate("Requests & Issues")+"</span></a>",
