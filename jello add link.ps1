@@ -30,3 +30,4 @@ $dam='m.ZP.translate("Home")+"</span></a>",'
 $fin='m\.ZP\.translate\("Home"\)\+"<\/span><\/a>",'
 $rep=$dam+"n+='"+'<a is="emby-linkbutton" class="navMenuOption lnkMediaFolder" href="http://192.168.1.33:5000/" target="_blank"><i class="md-icon navMenuOptionIcon"><img src="https://raw.githubusercontent.com/Sarin-jacob/files/main/slogo.png"></i><span class="navMenuOptionText"'+">'+"+'m.ZP.translate("Requests & Issues")+"</span></a>",'
 (Get-Content $mainfile) -replace $fin, $rep | Set-Content $mainfile
+Exit
