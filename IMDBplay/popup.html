@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IMDb Video Player</title>
+</head>
+<body>
+  <script>
+    // Function to extract IMDb ID from URL
+    function getIMDbID(url) {
+      const match = url.match(/\/tt(\d+)\//);
+      return match ? match[1] : null;
+    }
+
+    // Get current tab's URL
+    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+      const imdbID = getIMDbID(tabs[0].url);
+      if (imdbID) {
+        const videoURL = `https://vidsrc.to/embed/movie/tt${imdbID}`;
+        window.location.href = videoURL; // Redirect to the video player
+      }
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
